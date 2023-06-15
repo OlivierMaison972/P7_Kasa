@@ -1,0 +1,37 @@
+.home-content {
+     
+    display: grid;
+    grid-template-columns: repeat(3, calc(350px - 30px)) ;
+    margin-top: 40px;
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    gap: 50px;
+    justify-content: center;
+    padding: 30px;
+}
+
+ .home{
+  margin:20px;
+ }
+
+ /* Media queries */
+/* Ecran tablettes */
+ @media screen and (min-width: 769px) and (max-width:1200px){
+  .home-content{
+    display: grid;
+    grid-template-columns: repeat(2, calc(320px - 30px));
+    gap: 30px;
+  }
+ }
+
+ /* Ecran plus petit que 481px */
+ @media screen and (max-width: 768px){
+  .home-content{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:0;
+    background-color: transparent;
+  }
+ }
+ 

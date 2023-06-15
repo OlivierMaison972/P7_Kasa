@@ -1,0 +1,129 @@
+.Fiche-container {
+    color:#ff6060 ;
+    flex-direction: column;
+    margin: 0 20px;
+  }
+
+.Fiche-logement {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+.description-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  }
+
+.description-info__titletags {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.description-info__titletags__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px 0;
+    }
+
+.titre-logement {
+    font-size :25px;
+    font-weight:500;
+    }
+
+.endroit-logement {
+    display: flex;
+    margin-top: 10px;
+    font-size:14px;
+    font-weight: 500;
+    }
+      
+.description-info__titletags__tags{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    }
+    
+.description-info__proprietaire{
+    display: flex;
+    flex-direction: column;
+    }
+      
+.description-info__proprietaire__nom-prop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+.nom-proprietaire {
+    font-size :18px;
+    margin-right: 10px;
+    text-align: right;
+    width: 93px;
+    font-style: normal;
+    line-height: 142.6%;
+    }
+.photo-proprietaire {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    }
+    
+.description-info__proprietaire__rate {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+    }
+
+.description-centent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+ 
+.description-centent__description {
+    width: 50%;
+    padding-right: 40px;
+    }
+.description-centent__equipement {
+    width: 50%;
+    padding-left: 40px;
+    } 
+
+    /* Media queries */
+    /* Affichage des écran plus petits que 769px */
+    @media screen and (max-width:768px){
+      .description-info{
+        flex-direction:column;
+        align-items: flex-start;
+      }
+
+      .description-info__proprietaire{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+      .nom-proprietaire{
+        font-size: 20px;
+      }
+      
+      .description-centent{
+        flex-direction:column;
+      }
+
+      .description-centent__description, .description-centent__equipement{
+        width: 100%;
+        padding:0;
+      }
+
+      .titre-logement{
+        font-size: 20px;
+      }
+    }

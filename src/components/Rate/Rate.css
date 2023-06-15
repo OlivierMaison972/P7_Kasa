@@ -1,0 +1,14 @@
+.etoile {
+    width: 25px;
+    height: 25px;
+    margin:4px;
+    }
+
+/* Media queries */
+    /* Affichage des écran plus petits que 769px */
+    @media screen and (max-width:768px){
+.etoile{
+    width: 20px;
+    height: 20px;
+  }
+}

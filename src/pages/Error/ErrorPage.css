@@ -1,0 +1,33 @@
+.error-page{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.error-code{
+    color:#ff6060;
+    font-size: 200px;
+    margin-bottom: 0;
+}
+
+.error-text{
+    color:#ff6060;
+    font-size: 25px;
+    margin-bottom: 130px;
+    text-align: center;
+}
+
+.errorContainer__Link{
+    color:#ff6060;
+    text-decoration: underline;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width:768px){
+    .error-text{
+        display: flex;
+        justify-content: center;
+    }
+} 
+    
