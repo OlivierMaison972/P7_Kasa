@@ -1,7 +1,7 @@
 import React from 'react';
 import emptyStar from "../../assets/images/rate/startRempli.png";
 import fullStar from "../../assets/images/rate/startVide.png";
-import "../../pages/Logement/FicheLogement.css"
+import "../Rate/Rate.css"
 
 function Rate(props) {
       const score = props.score;
