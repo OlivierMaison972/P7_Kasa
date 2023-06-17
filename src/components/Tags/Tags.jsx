@@ -1,4 +1,5 @@
 import React from "react";
+import "../Tags/Tags.css"
 
 function Tag({ nom }) {
   return (
